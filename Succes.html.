@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order Received | CrystalTopUp</title>
+<style>
+body{background:#09091b;color:white;font-family:Arial;text-align:center;padding:50px 20px}
+h1{color:#c7b5ff}
+.box{background:#191936;padding:30px;border-radius:20px;max-width:400px;margin:auto}
+a{color:#c7b5ff}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>💎 Order Received!</h1>
+<p>Thank you for choosing CrystalTopUp!</p>
+<p>Your order has been submitted.</p>
+<p>We will verify your payment manually before processing your top-up.</p>
+<a href="/">Back to Store</a>
+</div>
+</body>
+</html>
