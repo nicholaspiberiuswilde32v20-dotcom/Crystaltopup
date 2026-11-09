@@ -1,23 +1,32 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Order Received | CrystalTopUp</title>
+<title>Payment Instructions | CrystalTopUp</title>
 <style>
-body{background:#09091b;color:white;font-family:Arial;text-align:center;padding:50px 20px}
-h1{color:#c7b5ff}
-.box{background:#191936;padding:30px;border-radius:20px;max-width:400px;margin:auto}
-a{color:#c7b5ff}
+body{margin:0;background:#090b20;color:white;font-family:Arial;text-align:center;padding:35px 18px}
+.box{max-width:420px;margin:30px auto;background:#171c3b;border:1px solid #7761c9;border-radius:22px;padding:28px 20px}
+h1{color:#c8b5ff}
+.number{font-size:29px;font-weight:bold;color:#70dcff;margin:18px 0}
+.name{font-size:21px;color:#fff}
+button,a{display:block;width:100%;box-sizing:border-box;padding:14px;margin-top:18px;border:0;border-radius:10px;background:#7654e9;color:white;font-weight:bold;text-decoration:none}
+p{color:#c4c9e6;line-height:1.6}
 </style>
 </head>
 <body>
 <div class="box">
-<h1>💎 Order Received!</h1>
-<p>Thank you for choosing CrystalTopUp!</p>
-<p>Your order has been submitted.</p>
-<p>We will verify your payment manually before processing your top-up.</p>
-<a href="/">Back to Store</a>
+<h1>💎 CrystalTopUp</h1>
+<h2>Payment Instructions</h2>
+<p>Your order was submitted!</p>
+<p>Please send your payment using these GCash details:</p>
+<div class="number">09150176551</div>
+<div class="name">Kennedy F.</div>
+<p>After paying, keep your transaction receipt. Your payment will be manually verified before your MLBB top-up is processed.</p>
+<p>Never share your GCash MPIN or OTP.</p>
+<a href="/">BACK TO STORE</a>
 </div>
 </body>
 </html>
+
