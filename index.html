@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CrystalTopUp | MLBB Diamonds</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#09091b;color:white;font-family:Arial,sans-serif}
+header{padding:25px 18px;background:linear-gradient(135deg,#21145b,#101b48);text-align:center}
+h1{font-size:32px;color:#c7b5ff;margin:10px}
+header p{color:#ddd}
+main{max-width:850px;margin:auto;padding:20px}
+.hero{padding:35px 20px;text-align:center;border-radius:22px;background:linear-gradient(135deg,#39218c,#152c70);margin-bottom:25px}
+.hero h2{font-size:28px}
+.hero p{color:#e0dcff}
+h2,h3{color:#d6c5ff}
+.card{background:#17172f;border:1px solid #39336b;border-radius:17px;padding:20px;margin:15px 0}
+.price{font-size:27px;color:#a99aff;font-weight:bold}
+button{background:#7652e8;color:white;border:0;padding:14px 20px;border-radius:10px;font-weight:bold;font-size:16px;width:100%;margin-top:12px}
+input,select{width:100%;padding:14px;margin:8px 0 16px;border-radius:9px;border:1px solid #51477e;background:#101027;color:white}
+label{color:#ddd}
+.qr{padding:25px;text-align:center;background:#20203d;border-radius:15px}
+.qr img{max-width:230px;width:100%;background:white;padding:8px;border-radius:10px}
+.small{font-size:13px;color:#bbb}
+footer{text-align:center;padding:25px;color:#aaa}
+</style>
+</head>
+<body>
+<header>
+<h1>💎 CrystalTopUp</h1>
+<p>Your MLBB Diamond Top-Up Store</p>
+</header>
+<main>
+<section class="hero">
+<h2>Power Up Your Game!</h2>
+<p>Fast and easy Mobile Legends top-ups.</p>
+<p>Choose your package and submit your order below.</p>
+</section>
+
+<h2>💎 MLBB Packages</h2>
+<div class="card">
+<h3>112 Diamonds</h3>
+<p class="price">₱110</p>
+<button onclick="choose('112 Diamonds - ₱110')">Choose Package</button>
+</div>
+<div class="card">
+<h3>Weekly Elite Bundle</h3>
+<p class="price">₱60</p>
+<p>55 Diamonds + 20 COA + extras</p>
+<button onclick="choose('Weekly Elite Bundle - ₱60')">Choose Package</button>
+</div>
+
+<h2>💳 Payment</h2>
+<div class="card qr">
+<h3>GCash / InstaPay QR</h3>
+<p>Scan the store's official QR code to pay.</p>
+<p><b>QR code will be added before launch.</b></p>
+<p>Maya: <b>Not Available</b></p>
+</div>
+
+<h2>📝 Place Your Order</h2>
+<div class="card">
+<form name="mlbb-orders" method="POST" data-netlify="true" action="/success.html">
+<input type="hidden" name="form-name" value="mlbb-orders">
+<label>Choose package</label>
+<select name="Package" id="package" required>
+<option value="">Select a package</option>
+<option>112 Diamonds - ₱110</option>
+<option>Weekly Elite Bundle - ₱60</option>
+</select>
+<label>MLBB Player ID</label>
+<input name="Player ID" required placeholder="Enter Player ID">
+<label>Server ID</label>
+<input name="Server ID" required placeholder="Enter Server ID">
+<label>Your name</label>
+<input name="Customer Name" required placeholder="Full name">
+<label>Contact number</label>
+<input name="Contact" required placeholder="Your contact number">
+<label>Payment reference number</label>
+<input name="Payment Reference" required placeholder="Enter reference number">
+<label>Payment method</label>
+<select name="Payment Method" required>
+<option>GCash</option>
+<option>InstaPay QR</option>
+</select>
+<button type="submit">Submit Order</button>
+<p class="small">Orders are manually checked. Top-up is not automatic. Please wait for payment verification.</p>
+</form>
+</div>
+</main>
+<footer>© 2026 CrystalTopUp | MLBB Top-Up Store</footer>
+<script>
+function choose(value){
+document.getElementById('package').value=value;
+document.querySelector('form').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
